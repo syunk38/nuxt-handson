@@ -24,13 +24,17 @@
   </section>
 </template>
 
-<script>
-import Logo from '~/components/Logo.vue'
+<script lang="ts">
+import Logo from '~/components/Logo.vue';
+import { Component, Vue } from 'vue-property-decorator';
 
-export default {
+@Component({
   components: {
     Logo
   }
+})
+export default class Index extends Vue{
+  
 }
 </script>
 

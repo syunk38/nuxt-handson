@@ -1,17 +1,17 @@
-const pkg = require('./package')
+import NuxtConfiguration from '@nuxt/config'
 
-module.exports = {
+
+const nuxtConfig: NuxtConfiguration = {
   mode: 'spa',
-
   /*
   ** Headers of the page
   */
   head: {
-    title: pkg.name,
+    title: 'nuxt hands on',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description }
+      { hid: 'description', name: 'description', content: 'nuxt検証' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
@@ -69,3 +69,5 @@ module.exports = {
     }
   }
 }
+
+export default nuxtConfig;
