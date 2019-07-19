@@ -12,7 +12,9 @@
     "experimentalDecorators": true,
     "allowJs": true,
     "sourceMap": true,
-    "noImplicitThis": true,
+    "strict": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
     "noEmit": true,
     "baseUrl": ".",
     "paths": {
