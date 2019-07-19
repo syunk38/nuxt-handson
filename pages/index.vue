@@ -1,7 +1,7 @@
 <template>
   <section class="container">
     <div>
-      <logo />
+      <Logo />
       <h1 class="title">
         nuxt-handson
       </h1>
@@ -9,33 +9,32 @@
         nuxt検証
       </h2>
       <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >Documentation</a>
+        <a href="https://nuxtjs.org/" target="_blank" class="button--green"
+          >Documentation</a
+        >
         <a
           href="https://github.com/nuxt/nuxt.js"
           target="_blank"
           class="button--grey"
-        >GitHub</a>
+          >GitHub</a
+        >
       </div>
     </div>
   </section>
 </template>
 
 <script lang="ts">
-import Logo from '~/components/Logo.vue';
-import { Component, Vue } from 'vue-property-decorator';
+import Logo from '~/components/Logo.vue'
+import { Component, Vue } from 'vue-property-decorator'
 
 @Component({
   components: {
     Logo
   }
 })
-export default class Index extends Vue{
-  
-}
+class Index extends Vue {}
+
+export default Index
 </script>
 
 <style>
